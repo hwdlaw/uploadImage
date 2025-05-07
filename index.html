@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; text-align: center; }
+        #preview { max-width: 100%; height: auto; margin-top: 10px; }
+        #error { color: red; display: none; }
+        input { margin: 10px; }
+    </style>
+</head>
+<body>
+    <h2>Upload Image (Max 2MB)</h2>
+    <input type="file" id="imageInput" accept="image/*" capture="environment">
+    <br>
+    <img id="preview" src="" alt="" style="display: none;">
+    <p id="error"></p>
+    <button id="uploadBtn" disabled>Upload</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
